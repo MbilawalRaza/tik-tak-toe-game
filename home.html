@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span style="justify-content: center; display: flex; padding-bottom: 40px ;  height: auto;width: 100%; font-family: Arial, Helvetica, sans-serif; font-size: 60px; font-weight: bolder; color: rgb(0, 0, 0);">Tik-Tak-Toe</span>
+   <div class="counter">
+    <div id="xele"> X turn </div>
+    <div id="oele">O turn</div>
+   </div>
+    <div class="btn-parent"><button style="display:none;" id="button" onclick="restartbutton(this)" class="btn">Restart</button></div>
+    <div class="board">
+        
+        <div class="row">
+            <div id="box-1" class="cell" onclick="clickCell(this)"></div>
+            <div  id="box-2" class="cell" onclick="clickCell(this)"></div>
+            <div  id="box-3" class="cell" onclick="clickCell(this)"></div>
+        </div>
+        <div class="row">
+            <div  id="box-4"class="cell" onclick="clickCell(this)"></div>
+            <div  id="box-5" class="cell" onclick="clickCell(this)"></div>
+            <div  id="box-6" class="cell" onclick="clickCell(this)"></div>
+        </div>
+        <div class="row">
+            <div  id="box-7" class="cell"onclick="clickCell(this)"></div>
+            <div  id="box-8" class="cell"onclick="clickCell(this)"></div>
+            <div  id="box-9" class="cell"onclick="clickCell(this)"></div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="app.js"></script>
+</html>

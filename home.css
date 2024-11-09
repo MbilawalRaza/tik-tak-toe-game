@@ -1,0 +1,104 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    height: 100vh;
+    background-color: #56c9477e;
+    font-family: Arial, sans-serif;
+}
+
+.board {
+    padding: 20px ;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.row:nth-child(1) .cell {
+    border-bottom: 5px solid #333;
+}
+
+.row:nth-child(2) .cell {
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+}
+
+.row:nth-child(3) .cell {
+    border-top: 5px solid #333;
+}
+
+.cell:nth-child(1) {
+    border-right: 5px solid #333;
+}
+
+.cell:nth-child(2) {
+    border-left: 5px solid #333;
+    border-right: 5px solid #333;
+}
+
+.cell:nth-child(3) {
+    border-left: 5px solid #333;
+}
+
+.cell:hover {
+    background-color: #ffffff 1s;
+
+}
+.disabled{
+    pointer-events: none;
+}
+.enable{
+    pointer-events: none;
+}
+.btn{
+height: 50px;
+width: 50px;
+border-radius: 3px;
+background-color: #59ff4386;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 15%;
+border: 5px solid black;
+height: 20px auto;
+
+}
+.btn-parent{
+    padding-top:15px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter{
+    display: flex;
+    gap: 20px;
+justify-content: center;
+font-size: xx-large;
+font-weight: bold;
+}
